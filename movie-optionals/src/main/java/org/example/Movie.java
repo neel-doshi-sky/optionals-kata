@@ -3,18 +3,22 @@ package org.example;
 public class Movie {
 
     private final String title;
-    private final int duration;
+    private Integer duration;
 
-    public Movie(String title, int duration) {
+    public Movie(String title, Integer duration) {
         this.title = title;
         this.duration = duration;
+    }
+
+    public Movie(String title) {
+        this.title = title;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public int getDuration() {
+    public Integer getDuration() {
         return duration;
     }
 
