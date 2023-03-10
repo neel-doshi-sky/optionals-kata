@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Optional;
+
 public class Movie {
 
     private final String title;
@@ -14,8 +16,8 @@ public class Movie {
         this.title = title;
     }
 
-    public String getTitle() {
-        return title;
+    public Optional<String> getTitle() {
+        return Optional.ofNullable(title);
     }
 
     public Integer getDuration() {
